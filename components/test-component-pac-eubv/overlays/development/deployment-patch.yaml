@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-pac-eubv
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/build-e2e-mwnn-tenant/build-suite-test-application-hhtw/test-component-pac-eubv@sha256:b8388969f35230ba19157b5436261d38acba71482763ec92962b6c07d8d03d43
+        name: my-nginx
+        resources: {}
+status: {}
